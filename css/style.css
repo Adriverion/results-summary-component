@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+
+    /*Primary colors*/
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /*Secundary colors*/
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /*Gradient 1 (background)*/
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royale-blue: hsl(241, 81%, 54%);
+
+    /*Gradient 2 (circle)*/
+    --violet-blue: hsl(241, 81%, 54%);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+main {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+}
+
+.summary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary__section-title {
+    width: 100%;
+    margin: 1rem;
+}
+
+.summary__section-title h2 {
+    font-size: 1.2rem;
+}
+
+
+.summary__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 30px;
+    padding: 2rem;
+}
+
+.summary__score-container {
+    text-align: center;
+    background: linear-gradient(var(--light-slate-blue), var(--light-royale-blue));
+    color: var(--pale-blue);
+    z-index: 999;
+}
+
+.summary__score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.summary__score-numbers {
+    color: var(--light-lavender);
+}
+
+.summary__score-numbers span {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.summary__score-description {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.summary__score-description-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--white);
+    margin: 1rem;
+}
+
+.summary__score-description-p {
+    margin: 1rem;
+}
+
+.summary__spects-container {
+    border-start-start-radius: 0;
+    border-end-start-radius: 0;
+    width: 23rem;
+    margin-left: -2rem;
+    padding-left: 4rem;
+    color: var(--dark-gray-blue);
+    box-shadow: 10px 20px 50px var(--light-lavender);
+}
+
+.summary__spects-title {
+    width: 100%;
+}
+
+.summary__spects-list {
+    list-style: none;
+    width: 100%;
+}
+
+.summary__spect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.summary__spect--reaction {
+    background-color: hsla(0, 100%, 67%, .2);
+}
+
+.summary__spect--reaction .summary__spect-name p {
+    color: hsl(0, 100%, 67%);
+}
+
+.summary__spect--memory {
+    background-color: hsla(39, 100%, 56%, .2);
+}
+
+.summary__spect--memory .summary__spect-name p {
+    color: hsl(39, 100%, 56%);
+}
+
+.summary__spect--verbal {
+    background-color: hsla(166, 100%, 37%, .2);
+}
+
+.summary__spect--verbal .summary__spect-name p {
+    color: hsl(166, 100%, 37%);
+}
+
+.summary__spect--visual {
+    background-color: hsla(234, 85%, 45%, .2);
+}
+
+.summary__spect--visual .summary__spect-name p {
+    color: hsl(234, 85%, 45%);
+}
+
+.summary__spect-name {
+    display: flex;
+    font-weight: 700;
+}
+
+.summary__spect-name img {
+    margin-right: .5rem;
+}
+
+.summary__spect-score {
+    color: hsla(224, 30%, 27%, 0.5);;
+}
+
+.summary__spect-score b {
+    color: var(--dark-gray-blue);
+}
+
+.summary__button {
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    border-style: none;
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    font-weight: 500;
+    transition: background 1s ease;
+}
+
+.summary__button:hover {
+    background-color: var(--light-slate-blue);
+}
+
+.summary__button:active {
+    background: linear-gradient(var(--light-slate-blue), var(--light-royale-blue));
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution__link { 
+    color: hsl(228, 45%, 44%); 
+}
