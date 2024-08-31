@@ -30,8 +30,8 @@ Los usuarios deberían poder:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/results-summary-component-5sfWd7YrFW)
-- Sitio en vivo: [Add live site URL here](https://results-summary-component-main-psi-bice.vercel.app/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/results-summary-component-5sfWd7YrFW)
+- Sitio en vivo: [Vercel](https://results-summary-component-main-psi-bice.vercel.app/)
 
 ## Mi Proceso
 
